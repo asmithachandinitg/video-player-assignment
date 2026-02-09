@@ -1,0 +1,333 @@
+{
+  "categories": [
+    {
+      "category": { "name": "Animation" },
+      "contents": [
+        {
+          "title": "Big Buck Bunny",
+          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg",
+          "duration": "9:56",
+          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+        },
+        {
+          "title": "Elephants Dream",
+          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ElephantsDream.jpg",
+          "duration": "10:53",
+          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+        },
+        {
+          "title": "Sintel",
+          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/Sintel.jpg",
+          "duration": "14:48",
+          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+        },
+        {
+          "title": "Tears of Steel",
+          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/TearsOfSteel.jpg",
+          "duration": "12:14",
+          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
+        },
+        {
+          "title": "Subaru Outback On Street And Dirt",
+          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/SubaruOutbackOnStreetAndDirt.jpg",
+          "duration": "2:10",
+          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
+        },
+        {
+          "title": "Volkswagen GTI Review",
+          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/VolkswagenGTIReview.jpg",
+          "duration": "8:00",
+          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4"
+        },
+        {
+          "title": "We Are Going On Bullrun",
+          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/WeAreGoingOnBullrun.jpg",
+          "duration": "2:30",
+          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4"
+        },
+        {
+          "title": "For Bigger Blazes",
+          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerBlazes.jpg",
+          "duration": "0:15",
+          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+        },
+        {
+          "title": "For Bigger Escape",
+          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerEscape.jpg",
+          "duration": "0:15",
+          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscape.mp4"
+        },
+        {
+          "title": "For Bigger Fun",
+          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerFun.jpg",
+          "duration": "0:15",
+          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+        }
+      ]
+    },
+
+    {
+      "category": { "name": "Travel" },
+      "contents": [
+        {
+          "title": "Mountain Travel",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+          "duration": "5:00",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4"
+        },
+        {
+          "title": "Beach Walk",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+          "duration": "3:40",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/Beach.mp4"
+        },
+        {
+          "title": "Forest Drone",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e",
+          "duration": "4:10",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/Forest.mp4"
+        },
+        {
+          "title": "Waterfall Nature",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9",
+          "duration": "2:50",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/Waterfall.mp4"
+        },
+        {
+          "title": "City Timelapse",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b",
+          "duration": "3:15",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/City.mp4"
+        },
+        {
+          "title": "Desert Drive",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+          "duration": "4:05",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/Desert.mp4"
+        },
+        {
+          "title": "River Flow",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad",
+          "duration": "2:45",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/River.mp4"
+        },
+        {
+          "title": "Snow Mountains",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66",
+          "duration": "3:55",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/Snow.mp4"
+        },
+        {
+          "title": "Island Aerial",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
+          "duration": "3:05",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/Island.mp4"
+        },
+        {
+          "title": "Sunset Travel",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1493558103817-58b2924bce98",
+          "duration": "2:35",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/Sunset.mp4"
+        }
+      ]
+    },
+
+    {
+      "category": { "name": "Food" },
+      "contents": [
+        {
+          "title": "Pasta Cooking",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1490645935967-10de6ba17061",
+          "duration": "3:20",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/Pasta.mp4"
+        },
+        {
+          "title": "Burger Closeup",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1550547660-d9450f859349",
+          "duration": "2:40",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/Burger.mp4"
+        },
+        {
+          "title": "Coffee Pour",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1509042239860-f550ce710b93",
+          "duration": "2:10",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/Coffee.mp4"
+        },
+        {
+          "title": "Dessert Making",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1488477181946-6428a0291777",
+          "duration": "3:05",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/Dessert.mp4"
+        },
+        {
+          "title": "Pizza Baking",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591",
+          "duration": "4:00",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/Pizza.mp4"
+        },
+        {
+          "title": "Street Food India",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d",
+          "duration": "3:30",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/StreetFood.mp4"
+        },
+        {
+          "title": "Cake Decoration",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1551024506-0bccd828d307",
+          "duration": "2:55",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/Cake.mp4"
+        },
+        {
+          "title": "Salad Prep",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
+          "duration": "2:35",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/Salad.mp4"
+        },
+        {
+          "title": "Sushi Making",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1553621042-f6e147245754",
+          "duration": "3:10",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/Sushi.mp4"
+        },
+        {
+          "title": "Chocolate Drip",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1511381939415-e44015466834",
+          "duration": "2:25",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/Chocolate.mp4"
+        }
+      ]
+    },
+
+    {
+      "category": { "name": "Nature" },
+      "contents": [
+        {
+          "title": "Ocean Waves",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
+          "duration": "3:20",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/Ocean.mp4"
+        },
+        {
+          "title": "Rain Falling",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1501696461415-6bd6660c6742",
+          "duration": "2:50",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/Rain.mp4"
+        },
+        {
+          "title": "Birds Flying",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1444464666168-49d633b86797",
+          "duration": "2:40",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/Birds.mp4"
+        },
+        {
+          "title": "Lake View",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+          "duration": "3:30",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/Lake.mp4"
+        },
+        {
+          "title": "Green Hills",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1469474968028-56623f02e42e",
+          "duration": "3:10",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/Hills.mp4"
+        },
+        {
+          "title": "Thunderstorm",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1500673922987-e212871fec22",
+          "duration": "2:20",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/Storm.mp4"
+        },
+        {
+          "title": "Windmill Field",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1466611653911-95081537e5b7",
+          "duration": "3:05",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/Windmill.mp4"
+        },
+        {
+          "title": "Sunrise Time",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1493558103817-58b2924bce98",
+          "duration": "2:45",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/Sunrise.mp4"
+        },
+        {
+          "title": "Autumn Forest",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1476041800959-2f6bb412c8ce",
+          "duration": "3:00",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/Autumn.mp4"
+        },
+        {
+          "title": "Night Sky Stars",
+          "thumbnailUrl": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca",
+          "duration": "2:55",
+          "mp4": "https://storage.googleapis.com/coverr-main/mp4/Stars.mp4"
+        }
+      ]
+    },
+
+     {
+      "category": { "name": "Technology" },
+      "contents": [
+        {
+          "title": "For Bigger Joyrides",
+          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerJoyrides.jpg",
+          "duration": "0:15",
+          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+        },
+        {
+          "title": "For Bigger Meltdowns",
+          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerMeltdowns.jpg",
+          "duration": "0:15",
+          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
+        },
+        {
+          "title": "Google Demo Slam",
+          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/GoogleDemoSlam.jpg",
+          "duration": "3:00",
+          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/GoogleDemoSlam.mp4"
+        },
+        {
+          "title": "Big Buck Bunny Trailer",
+          "thumbnailUrl": "https://peach.blender.org/wp-content/uploads/title_anouncement.jpg",
+          "duration": "1:00",
+          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+        },
+        {
+          "title": "Sintel Trailer",
+          "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Sintel_poster.jpg",
+          "duration": "1:30",
+          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+        },
+        {
+          "title": "Tears of Steel Trailer",
+          "thumbnailUrl": "https://mango.blender.org/wp-content/uploads/2013/05/01_thom_celia_bridge.jpg",
+          "duration": "1:20",
+          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
+        },
+        {
+          "title": "Elephants Dream Trailer",
+          "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Elephants_Dream_poster.jpg",
+          "duration": "1:10",
+          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+        },
+        {
+          "title": "For Bigger Escape HD",
+          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerEscape.jpg",
+          "duration": "0:20",
+          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscape.mp4"
+        },
+        {
+          "title": "For Bigger Fun HD",
+          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerFun.jpg",
+          "duration": "0:20",
+          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+        },
+        {
+          "title": "For Bigger Joyrides HD",
+          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerJoyrides.jpg",
+          "duration": "0:20",
+          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+        }
+      ]
+    }
+  ]
+}

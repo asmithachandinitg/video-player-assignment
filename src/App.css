@@ -40,3 +40,12 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Fade animation */
+body {
+  transition: opacity 0.25s ease;
+}
+
+body.fade-out {
+  opacity: 0;
+}
