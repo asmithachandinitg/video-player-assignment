@@ -1,11 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Player from "./pages/Player";
 
 function Home() {
   return <h1>Home Page</h1>;
-}
-
-function Player() {
-  return <h1>Player Page</h1>;
 }
 
 function App() {
