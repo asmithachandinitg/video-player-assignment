@@ -49,3 +49,9 @@ body {
 body.fade-out {
   opacity: 0;
 }
+
+button {
+  cursor: "pointer";
+  display: "flex";
+  gap: "10px";
+}

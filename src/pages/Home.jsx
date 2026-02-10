@@ -5,8 +5,7 @@ import { useState } from "react";
 function Home() {
   const navigate = useNavigate();
 
-  const [expanded, setExpanded] =
-    useState({});
+  const [expanded, setExpanded] = useState({});
 
   const toggleLoadMore = (index) => {
     setExpanded((prev) => ({
@@ -15,147 +14,68 @@ function Home() {
     }));
   };
 
-  /* 🎬 Open Player With Fade */
   const openPlayer = (video, category) => {
-    
-    // Save video for refresh safety
-    localStorage.setItem(
-      "currentVideo",
-      JSON.stringify({ video, category })
-    );
+    localStorage.setItem("currentVideo", JSON.stringify({ video, category }));
 
-    // Fade out page
-    document.body.classList.add(
-      "fade-out"
-    );
-
-    // Navigate after fade
     setTimeout(() => {
       navigate("/player", {
         state: { video, category },
       });
-    }, 250);
+    }, 50);
   };
 
   return (
     <div style={styles.container}>
-      <h1 style={styles.heading}>
-        Discover Videos
-      </h1>
+      <h1 style={styles.heading}>Discover Videos</h1>
 
-      {data.categories.map(
-        (cat, index) => {
-          const isExpanded =
-            expanded[index];
+      {data.categories.map((cat, index) => {
+        const isExpanded = expanded[index];
 
-          const visibleVideos =
-            isExpanded
-              ? cat.contents
-              : cat.contents.slice(
-                  0,
-                  6
-                );
+        const visibleVideos = isExpanded
+          ? cat.contents
+          : cat.contents.slice(0, 6);
 
-          return (
-            <div
-              key={index}
-              style={styles.section}
-            >
-              <h2 style={styles.category}>
-                {cat.category.name}
-              </h2>
+        return (
+          <div key={index} style={styles.section}>
+            <h2 style={styles.category}>{cat.category.name}</h2>
 
-              <div style={styles.grid}>
-                {visibleVideos.map(
-                  (video, i) => (
-                    <div
-                      key={i}
-                      style={styles.card}
-                      onClick={() =>
-                        openPlayer(
-                          video,
-                          cat.category.name
-                        )
-                      }
-                    >
-                      <div
-                        style={
-                          styles.thumbWrapper
-                        }
-                      >
-                        <img
-                          src={
-                            video.thumbnailUrl
-                          }
-                          alt={
-                            video.title
-                          }
-                          style={
-                            styles.thumbnail
-                          }
-                        />
-
-                        <span
-                          style={
-                            styles.duration
-                          }
-                        >
-                          {
-                            video.duration
-                          }
-                        </span>
-
-                        <span
-                          style={
-                            styles.badge
-                          }
-                        >
-                          {
-                            cat.category
-                              .name
-                          }
-                        </span>
-                      </div>
-
-                      <p
-                        style={
-                          styles.title
-                        }
-                      >
-                        {video.title}
-                      </p>
-                    </div>
-                  )
-                )}
-              </div>
-
-              {cat.contents.length >
-                6 && (
+            <div style={styles.grid}>
+              {visibleVideos.map((video, i) => (
                 <div
-                  style={
-                    styles.loadMoreWrapper
-                  }
+                  key={i}
+                  style={styles.card}
+                  onClick={() => openPlayer(video, cat.category.name)}
                 >
-                  <button
-                    style={
-                      styles.loadBtn
-                    }
-                    onClick={() =>
-                      toggleLoadMore(
-                        index
-                      )
-                    }
-                  >
-                    {isExpanded
-                      ? "Show Less"
-                      : "Show More"}
-                  </button>
+                  <div style={styles.thumbWrapper}>
+                    <img
+                      src={video.thumbnailUrl}
+                      alt={video.title}
+                      style={styles.thumbnail}
+                    />
+
+                    <span style={styles.duration}>{video.duration}</span>
+
+                    <span style={styles.badge}>{cat.category.name}</span>
+                  </div>
+
+                  <p style={styles.title}>{video.title}</p>
                 </div>
-              )}
+              ))}
             </div>
-          );
-        }
-      )}
+
+            {cat.contents.length > 6 && (
+              <div style={styles.loadMoreWrapper}>
+                <button
+                  style={styles.loadBtn}
+                  onClick={() => toggleLoadMore(index)}
+                >
+                  {isExpanded ? "Show Less" : "Show More"}
+                </button>
+              </div>
+            )}
+          </div>
+        );
+      })}
     </div>
   );
 }
