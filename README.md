@@ -8,7 +8,7 @@ The application delivers a seamless video playback experience similar to YouTube
 
 ## Live Demo
 
-Example: https://video-player.vercel.app
+Example: https://video-player-assignment-green.vercel.app/
 
 ---
 
@@ -61,14 +61,13 @@ Example: https://github.com/asmithachandinitg/video-player-assignment
 ### Replay Logic
 - When video completes:
   - Only replay button is shown
-  - Skip controls hidden
 - Prevents invalid seek at 100%
 
 ---
 
 ### Auto-Play Next (Bonus)
 - Automatically plays next related video
-- 2-second countdown overlay
+- 5-second countdown overlay
 - Cancel option available
 - Triggers only on natural video completion
 
