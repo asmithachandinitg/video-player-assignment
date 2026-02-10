@@ -1,6 +1,7 @@
 import data from "../data/videos.json";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 function Home() {
   const navigate = useNavigate();
@@ -38,14 +39,19 @@ function Home() {
         return (
           <div key={index} style={styles.section}>
             <h2 style={styles.category}>{cat.category.name}</h2>
-
             <div style={styles.grid}>
               {visibleVideos.map((video, i) => (
-                <div
+                <motion.div
                   key={i}
                   style={styles.card}
                   onClick={() => openPlayer(video, cat.category.name)}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  initial={{ opacity: 0, y: 40 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4 }}
                 >
+                  {/* Thumbnail */}
                   <div style={styles.thumbWrapper}>
                     <img
                       src={video.thumbnailUrl}
@@ -58,8 +64,9 @@ function Home() {
                     <span style={styles.badge}>{cat.category.name}</span>
                   </div>
 
+                  {/* Title */}
                   <p style={styles.title}>{video.title}</p>
-                </div>
+                </motion.div>
               ))}
             </div>
 

@@ -10,7 +10,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/player" element={<Player />} />
       </Routes>
-            <MiniPlayer />
+      <MiniPlayer />
     </BrowserRouter>
   );
 }

@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { FaPlay, FaPause } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
+import { motion } from "framer-motion";
 
 function MiniPlayer() {
   const navigate = useNavigate();
@@ -11,7 +12,7 @@ function MiniPlayer() {
   const [data, setData] = useState(null);
   const [playing, setPlaying] = useState(true);
 
-  /* 🔧 LOAD MINI PLAYER DATA */
+  /* LOAD MINI PLAYER DATA */
   useEffect(() => {
     const saved = localStorage.getItem("miniPlayer");
 
@@ -20,7 +21,7 @@ function MiniPlayer() {
 
       setData(parsed);
 
-      // 🔧 Sync play state
+      // Sync play state
       setPlaying(parsed.isPlaying ?? true);
     }
   }, [location.pathname]);
@@ -28,7 +29,7 @@ function MiniPlayer() {
   /* Show only on Home */
   if (!data || location.pathname !== "/") return null;
 
-  /* 🔧 PLAY / PAUSE */
+  /* PLAY / PAUSE */
   const togglePlay = () => {
     const vid = videoRef.current;
 
@@ -39,7 +40,7 @@ function MiniPlayer() {
 
     setPlaying(!playing);
 
-    // 🔧 Update storage play state
+    // Update storage play state
     localStorage.setItem(
       "miniPlayer",
       JSON.stringify({
@@ -49,13 +50,13 @@ function MiniPlayer() {
     );
   };
 
-  /* 🔧 CLOSE MINI PLAYER */
+  /* CLOSE MINI PLAYER */
   const closeMini = () => {
     localStorage.removeItem("miniPlayer");
     setData(null);
   };
 
-  /* 🔧 RESTORE FULLSCREEN */
+  /* RESTORE FULLSCREEN */
   const restore = () => {
     navigate("/player", {
       state: {
@@ -67,27 +68,23 @@ function MiniPlayer() {
     localStorage.removeItem("miniPlayer");
   };
 
-  /* 🔧 SAFE TITLE LOGIC */
-  const videoTitle =
-    data?.video?.title ||
-    data?.video?.name ||
-    "Playing video";
+  /* SAFE TITLE LOGIC */
+  const videoTitle = data?.video?.title || data?.video?.name || "Playing video";
 
   return (
-    <div style={styles.wrapper}>
+    <motion.div style={styles.wrapper}>
       <video
         ref={videoRef}
         src={data.video.mp4}
         style={styles.video}
         autoPlay={data.isPlaying}
         onLoadedMetadata={() => {
-          videoRef.current.currentTime =
-            data.currentTime || 0;
+          videoRef.current.currentTime = data.currentTime || 0;
         }}
         onClick={restore}
       />
 
-      {/* 🔧 TITLE DISPLAY */}
+      {/* TITLE DISPLAY */}
       <div style={styles.info} onClick={restore}>
         {videoTitle}
       </div>
@@ -99,7 +96,7 @@ function MiniPlayer() {
       <button onClick={closeMini} style={styles.btn}>
         <IoClose />
       </button>
-    </div>
+    </motion.div>
   );
 }
 
@@ -134,11 +131,11 @@ const styles = {
     fontSize: 14,
     cursor: "pointer",
 
-    /* 🔧 TITLE CLAMP */
+    /* TITLE CLAMP */
     whiteSpace: "nowrap",
     overflow: "hidden",
     textOverflow: "ellipsis",
-    color: "#fff"
+    color: "#fff",
   },
 
   btn: {

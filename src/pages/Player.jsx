@@ -5,6 +5,8 @@ import data from "../data/videos.json";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { IoIosSkipBackward, IoIosSkipForward } from "react-icons/io";
 import { FaPlay, FaPause } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { MdOutlineReplay } from "react-icons/md";
 
 /* ----------------------------- */
 
@@ -12,13 +14,20 @@ function Player() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  /* Restore video on refresh */
+  const [lastTap, setLastTap] = useState(0);
+  const [isEnded, setIsEnded] = useState(false);
+  const [countdown, setCountdown] = useState(null);
+  const [ripple, setRipple] = useState(null);
+
+  const countdownRef = useRef(null);
+  const videoRef = useRef(null);
+
+  /* Restore video */
   let video = location.state?.video;
   let category = location.state?.category;
 
   if (!video) {
     const saved = localStorage.getItem("currentVideo");
-
     if (saved) {
       const parsed = JSON.parse(saved);
       video = parsed.video;
@@ -26,44 +35,30 @@ function Player() {
     }
   }
 
-  /* Safety guard */
   if (!video || !video.mp4) {
     return <h2 style={{ color: "#fff" }}>No video selected</h2>;
   }
-
-  const videoRef = useRef(null);
 
   const [isPlaying, setIsPlaying] = useState(true);
   const [progress, setProgress] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
 
-  const [countdown, setCountdown] = useState(null);
-
-  /* ---------------- DRAG STATE (ADDED) ---------------- */
+  /* ---------------- DRAG → MINI ---------------- */
 
   const [dragStartY, setDragStartY] = useState(null);
 
-  const startDrag = (y) => {
-    setDragStartY(y);
-  };
+  const startDrag = (y) => setDragStartY(y);
 
   const onDrag = (y) => {
     if (dragStartY === null) return;
-
-    const diff = y - dragStartY;
-
-    if (diff > 200) {
+    if (y - dragStartY > 200) {
       triggerMiniPlayer();
       setDragStartY(null);
     }
   };
 
-  const endDrag = () => {
-    setDragStartY(null);
-  };
-
-  /* ---------------- MINI PLAYER TRIGGER (ADDED) ---------------- */
+  const endDrag = () => setDragStartY(null);
 
   const triggerMiniPlayer = () => {
     const vid = videoRef.current;
@@ -82,7 +77,7 @@ function Player() {
     navigate("/");
   };
 
-  /* ---------------- RELATED VIDEOS ---------------- */
+  /* ---------------- RELATED ---------------- */
 
   const relatedVideos =
     data.categories
@@ -95,13 +90,27 @@ function Player() {
     const vid = videoRef.current;
     if (!vid) return;
 
-    const savedTime = localStorage.getItem(video.mp4);
+    const handleLoaded = () => {
+      const savedTime = localStorage.getItem(video.mp4);
 
-    if (savedTime) {
-      vid.currentTime = savedTime;
-    }
+      if (savedTime) {
+        const time = Number(savedTime);
 
-    vid.play();
+        /* Completion guard */
+        if (time >= vid.duration - 1) {
+          vid.currentTime = 0;
+          localStorage.removeItem(video.mp4);
+        } else {
+          vid.currentTime = time;
+        }
+      }
+
+      vid.play();
+    };
+
+    vid.addEventListener("loadedmetadata", handleLoaded);
+
+    return () => vid.removeEventListener("loadedmetadata", handleLoaded);
   }, [video]);
 
   /* ---------------- PROGRESS ---------------- */
@@ -124,99 +133,103 @@ function Player() {
 
   const togglePlay = () => {
     const vid = videoRef.current;
-
-    if (isPlaying) vid.pause();
-    else vid.play();
-
+    isPlaying ? vid.pause() : vid.play();
     setIsPlaying(!isPlaying);
+  };
+
+  const rippleEffect = (type) => {
+    setRipple(type);
+    setTimeout(() => setRipple(null), 400);
   };
 
   const forward = () => {
     videoRef.current.currentTime += 10;
+    rippleEffect("forward");
   };
 
   const backward = () => {
     videoRef.current.currentTime -= 10;
+    rippleEffect("backward");
   };
 
   const handleSeek = (e) => {
     const vid = videoRef.current;
     if (!vid.duration) return;
-
     vid.currentTime = (e.target.value / 100) * vid.duration;
   };
 
-  /* ---------------- TIME FORMAT ---------------- */
+  /* ---------------- DOUBLE TAP ---------------- */
 
-  const formatTime = (time) => {
-    if (!time) return "0:00";
-
-    const mins = Math.floor(time / 60);
-    const secs = Math.floor(time % 60)
-      .toString()
-      .padStart(2, "0");
-
-    return `${mins}:${secs}`;
+  const handleDoubleTap = (e) => {
+    const now = Date.now();
+    if (lastTap && now - lastTap < 300) {
+      e.clientX < window.innerWidth / 2 ? backward() : forward();
+    }
+    setLastTap(now);
   };
 
-  /* ---------------- SWITCH VIDEO ---------------- */
+  /* ---------------- REPLAY ---------------- */
 
-  const playNewVideo = (vid) => {
-    localStorage.setItem(
-      "currentVideo",
-      JSON.stringify({
-        video: vid,
-        category,
-      }),
-    );
-
-    navigate("/player", {
-      state: {
-        video: vid,
-        category,
-      },
-    });
-
-    window.location.reload();
+  const replayVideo = () => {
+    const vid = videoRef.current;
+    vid.currentTime = 0;
+    vid.play();
+    setIsEnded(false);
   };
 
   /* ---------------- AUTOPLAY NEXT ---------------- */
 
-  const handleEnded = () => {
+  const startCountdown = () => {
     if (!relatedVideos.length) return;
 
     let count = 5;
     setCountdown(count);
 
-    const interval = setInterval(() => {
+    countdownRef.current = setInterval(() => {
       count--;
       setCountdown(count);
 
       if (count === 0) {
-        clearInterval(interval);
+        clearInterval(countdownRef.current);
         playNewVideo(relatedVideos[0]);
       }
     }, 1000);
   };
 
-  /* ---------------- BACK ---------------- */
-
-  const goBack = () => {
-    navigate("/");
+  const cancelAutoplay = () => {
+    clearInterval(countdownRef.current);
+    setCountdown(null);
   };
+
+  const playNewVideo = (vid) => {
+    localStorage.setItem(
+      "currentVideo",
+      JSON.stringify({ video: vid, category }),
+    );
+
+    navigate("/player", {
+      state: { video: vid, category },
+    });
+
+    window.location.reload();
+  };
+
+  const handleEnded = () => {
+    setIsEnded(true);
+    startCountdown();
+  };
+
+  const goBack = () => navigate("/");
 
   /* ---------------- UI ---------------- */
 
   return (
-    <div style={styles.container}>
-      {/* Back */}
+    <motion.div style={styles.container}>
       <button style={styles.backBtn} onClick={goBack}>
         <IoMdArrowRoundBack />
-        Back
       </button>
 
-      {/* Video */}
-      <div
+      <motion.div
         style={styles.videoWrapper}
         onMouseDown={(e) => startDrag(e.clientY)}
         onMouseMove={(e) => onDrag(e.clientY)}
@@ -230,59 +243,77 @@ function Player() {
           src={video.mp4}
           style={styles.video}
           onTimeUpdate={updateProgress}
+          onClick={handleDoubleTap}
           onEnded={handleEnded}
+          onPlay={() => setIsEnded(false)}
         />
-      </div>
 
-      {/* Countdown */}
-      {countdown && (
+        {ripple && (
+          <motion.div
+            style={{
+              ...styles.ripple,
+              left: ripple === "forward" ? "70%" : "20%",
+            }}
+            initial={{ scale: 0.5, opacity: 0.7 }}
+            animate={{ scale: 2, opacity: 0 }}
+            transition={{ duration: 0.4 }}
+          />
+        )}
+      </motion.div>
+
+      {countdown !== null && (
         <div style={styles.countdown}>
           Next video in {countdown}s
-          <button onClick={() => setCountdown(null)}>
-            Cancel
-          </button>
+          <button onClick={cancelAutoplay}>Cancel</button>
         </div>
       )}
 
-      {/* Info */}
       <div style={styles.info}>
         <h2>{video.title}</h2>
         <p>{category}</p>
       </div>
 
-      {/* Controls */}
       <div style={styles.controls}>
         <div style={styles.buttons}>
-          <button onClick={backward}>
-            <IoIosSkipBackward /> 10s
-          </button>
+          {isEnded ? (
+            <button onClick={replayVideo}>
+              <MdOutlineReplay /> Replay
+            </button>
+          ) : (
+            <>
+              <button onClick={backward}>
+                <IoIosSkipBackward /> 10s
+              </button>
 
-          <button onClick={togglePlay}>
-            {isPlaying ? <FaPause /> : <FaPlay />}
-          </button>
+              <button onClick={togglePlay}>
+                {isPlaying ? <FaPause /> : <FaPlay />}
+              </button>
 
-          <button onClick={forward}>
-            10s <IoIosSkipForward />
-          </button>
+              <button onClick={forward}>
+                10s <IoIosSkipForward />
+              </button>
+            </>
+          )}
         </div>
 
         <input
           type="range"
           value={progress || 0}
           onChange={handleSeek}
+          style={styles.range}
         />
 
         <p>
-          {formatTime(currentTime)} /{" "}
-          {formatTime(duration)}
+          {Math.floor(currentTime / 60)}:
+          {String(Math.floor(currentTime % 60)).padStart(2, "0")} /{" "}
+          {Math.floor(duration / 60)}:
+          {String(Math.floor(duration % 60)).padStart(2, "0")}
         </p>
       </div>
 
-      {/* Related */}
+      {/* RELATED */}
       <div style={styles.relatedSection}>
-        <h3 style={styles.relatedHeading}>
-          More from {category}
-        </h3>
+        <h3 style={styles.relatedHeading}>More from {category}</h3>
 
         <div style={styles.relatedGrid}>
           {relatedVideos.map((vid, i) => (
@@ -301,7 +332,7 @@ function Player() {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
@@ -312,13 +343,11 @@ export default Player;
 const styles = {
   container: {
     background: "#000",
-    minHeight: "100vh",
+    minHeight: "70vh",
     color: "#fff",
   },
 
-  videoWrapper: {
-    width: "100%",
-  },
+  videoWrapper: { position: "relative" },
 
   video: {
     width: "100%",
@@ -326,69 +355,66 @@ const styles = {
     marginTop: "20px",
   },
 
-  info: {
-    padding: "16px",
-  },
-
-  controls: {
-    padding: "16px",
-  },
-
-  buttons: {
-    display: "flex",
-    gap: "10px",
-  },
-
-  relatedSection: {
-    padding: "20px",
-  },
-
-  relatedHeading: {
-    marginBottom: "16px",
-  },
-
-  relatedGrid: {
-    display: "grid",
-    gridTemplateColumns:
-      "repeat(auto-fill, minmax(220px, 1fr))",
-    gap: "16px",
-  },
-
-  relatedVideoCard: {
-    cursor: "pointer",
-  },
-
-  thumbnail: {
-    width: "100%",
-    height: "140px",
-    objectFit: "cover",
-    borderRadius: "10px",
-  },
-
-  title: {
-    marginTop: "8px",
-    fontSize: "14px",
+  ripple: {
+    position: "absolute",
+    top: "40%",
+    width: 80,
+    height: 80,
+    borderRadius: "50%",
+    background: "rgba(255,255,255,0.3)",
   },
 
   countdown: {
     position: "absolute",
-    bottom: "120px",
+    bottom: 120,
     left: "50%",
     transform: "translateX(-50%)",
     background: "#111",
     padding: "10px 20px",
   },
 
+  info: { padding: 16 },
+
+  controls: {
+    padding: 16,
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    gap: 12,
+  },
+
+  buttons: { display: "flex", gap: 20 },
+
+  relatedSection: { padding: 20 },
+
+  relatedHeading: { marginBottom: 16 },
+
+  relatedGrid: {
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))",
+    gap: 16,
+  },
+
+  relatedVideoCard: { cursor: "pointer" },
+
+  thumbnail: {
+    width: "100%",
+    height: 140,
+    objectFit: "cover",
+    borderRadius: 10,
+  },
+
+  title: { marginTop: 8, fontSize: 14 },
+
+  range: {
+    width: "100%",
+    maxWidth: 900,
+  },
+
   backBtn: {
     position: "absolute",
-    top: "10px",
-    left: "10px",
+    top: 10,
+    left: 10,
     zIndex: 9999,
-    cursor: "pointer",
-    padding: "8px 12px",
-    background: "rgba(0,0,0,0.6)",
-    color: "#fff",
-    border: "none",
-    borderRadius: "6px",
   },
 };
