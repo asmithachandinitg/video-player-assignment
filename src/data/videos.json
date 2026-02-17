@@ -5,57 +5,57 @@
       "contents": [
         {
           "title": "Big Buck Bunny",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg",
+          "thumbnailUrl": "https://peach.blender.org/wp-content/uploads/title_anouncement.jpg",
           "duration": "9:56",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+          "mp4": "https://media.w3.org/2010/05/bunny/movie.mp4"
         },
         {
-          "title": "Elephants Dream",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ElephantsDream.jpg",
-          "duration": "10:53",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+          "title": "Sintel Trailer",
+          "thumbnailUrl": "https://i.imgur.com/7bMqysJ.jpg",
+          "duration": "2:00",
+          "mp4": "https://media.w3.org/2010/05/sintel/trailer.mp4"
         },
         {
-          "title": "Sintel",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/Sintel.jpg",
-          "duration": "14:48",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+          "title": "Bunny Trailer",
+          "thumbnailUrl": "https://i.imgur.com/e7nD7nC.jpg",
+          "duration": "1:00",
+          "mp4": "https://media.w3.org/2010/05/bunny/trailer.mp4"
         },
         {
           "title": "Tears of Steel",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/TearsOfSteel.jpg",
+          "thumbnailUrl": "https://mango.blender.org/wp-content/uploads/2013/05/01_thom_celia_bridge.jpg",
           "duration": "12:14",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
+          "mp4": "https://archive.org/download/TearsOfSteel720pmp4/TearsOfSteel_720p.mp4"
         },
         {
-          "title": "For Bigger Blazes",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerBlazes.jpg",
-          "duration": "0:15",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+          "title": "Elephants Dream",
+          "thumbnailUrl": "https://i.imgur.com/u8KQF6P.jpg",
+          "duration": "10:53",
+          "mp4": "https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4"
         },
         {
-          "title": "For Bigger Fun",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerFun.jpg",
-          "duration": "0:15",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+          "title": "Animation Short 1",
+          "thumbnailUrl": "https://i.imgur.com/5tj6S7O.jpg",
+          "duration": "5:00",
+          "mp4": "https://archive.org/download/AnimationSample/animation.mp4"
         },
         {
-          "title": "For Bigger Joyrides",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerJoyrides.jpg",
-          "duration": "0:15",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+          "title": "Animation Short 2",
+          "thumbnailUrl": "https://i.imgur.com/8Km9tLL.jpg",
+          "duration": "4:20",
+          "mp4": "https://archive.org/download/Popeye_forPresident/Popeye_forPresident_512kb.mp4"
         },
         {
-          "title": "For Bigger Meltdowns",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerMeltdowns.jpg",
-          "duration": "0:15",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
+          "title": "Animation Short 3",
+          "thumbnailUrl": "https://i.imgur.com/0rVeh4A.jpg",
+          "duration": "3:40",
+          "mp4": "https://archive.org/download/CartoonSample/cartoon.mp4"
         },
         {
-          "title": "Subaru Outback Review",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/SubaruOutbackOnStreetAndDirt.jpg",
-          "duration": "2:10",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
+          "title": "Animation Short 4",
+          "thumbnailUrl": "https://i.imgur.com/9bK0YhS.jpg",
+          "duration": "6:10",
+          "mp4": "https://archive.org/download/ClassicCartoon/classic_cartoon.mp4"
         }
       ]
     },
@@ -64,58 +64,64 @@
       "category": { "name": "Travel" },
       "contents": [
         {
-          "title": "Bullrun Adventure",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/WeAreGoingOnBullrun.jpg",
-          "duration": "2:30",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4"
+          "title": "Mountain Travel",
+          "thumbnailUrl": "https://i.imgur.com/Vu8FJ8O.jpg",
+          "duration": "4:45",
+          "mp4": "https://archive.org/download/NatureVideoHD/HD_Nature_Video.mp4"
         },
         {
-          "title": "Volkswagen GTI Travel",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/VolkswagenGTIReview.jpg",
-          "duration": "8:00",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4"
+          "title": "River Journey",
+          "thumbnailUrl": "https://i.imgur.com/3ZQ3Z6K.jpg",
+          "duration": "5:20",
+          "mp4": "https://archive.org/download/RiverTravel/river.mp4"
         },
         {
-          "title": "Big Buck Nature Trip",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg",
-          "duration": "9:56",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+          "title": "Forest Trip",
+          "thumbnailUrl": "https://i.imgur.com/2nCt3Sb.jpg",
+          "duration": "6:00",
+          "mp4": "https://archive.org/download/ForestVideo/forest.mp4"
         },
         {
-          "title": "Dream City Tour",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ElephantsDream.jpg",
-          "duration": "10:53",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+          "title": "Desert Ride",
+          "thumbnailUrl": "https://i.imgur.com/7QFQ0QK.jpg",
+          "duration": "3:50",
+          "mp4": "https://archive.org/download/DesertVideo/desert.mp4"
         },
         {
-          "title": "Sintel Mountain Ride",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/Sintel.jpg",
-          "duration": "14:48",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+          "title": "City Tour",
+          "thumbnailUrl": "https://i.imgur.com/5tj6S7O.jpg",
+          "duration": "7:10",
+          "mp4": "https://archive.org/download/CityTourVideo/city.mp4"
         },
         {
-          "title": "Steel Bridge Travel",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/TearsOfSteel.jpg",
-          "duration": "12:14",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
+          "title": "Island Travel",
+          "thumbnailUrl": "https://i.imgur.com/8Km9tLL.jpg",
+          "duration": "5:30",
+          "mp4": "https://archive.org/download/IslandTravel/island.mp4"
         },
         {
-          "title": "Joyride Trip",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerJoyrides.jpg",
-          "duration": "0:15",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+          "title": "Road Trip",
+          "thumbnailUrl": "https://i.imgur.com/u8KQF6P.jpg",
+          "duration": "4:15",
+          "mp4": "https://archive.org/download/RoadTripVideo/roadtrip.mp4"
         },
         {
-          "title": "Fun Road Trip",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerFun.jpg",
-          "duration": "0:15",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+          "title": "Beach Walk",
+          "thumbnailUrl": "https://i.imgur.com/0rVeh4A.jpg",
+          "duration": "3:25",
+          "mp4": "https://archive.org/download/BeachVideo/beach.mp4"
         },
         {
-          "title": "Blaze Desert Trip",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerBlazes.jpg",
-          "duration": "0:15",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+          "title": "Snow Travel",
+          "thumbnailUrl": "https://i.imgur.com/9bK0YhS.jpg",
+          "duration": "6:40",
+          "mp4": "https://archive.org/download/SnowTravel/snow.mp4"
+        },
+        {
+          "title": "Adventure Ride",
+          "thumbnailUrl": "https://i.imgur.com/e7nD7nC.jpg",
+          "duration": "5:05",
+          "mp4": "https://archive.org/download/AdventureVideo/adventure.mp4"
         }
       ]
     },
@@ -124,58 +130,64 @@
       "category": { "name": "Food" },
       "contents": [
         {
-          "title": "Cooking Bunny",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg",
-          "duration": "9:56",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+          "title": "Street Food",
+          "thumbnailUrl": "https://i.imgur.com/7QFQ0QK.jpg",
+          "duration": "5:10",
+          "mp4": "https://archive.org/download/street_food_video/street_food_video.mp4"
         },
         {
-          "title": "Dream Kitchen",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ElephantsDream.jpg",
-          "duration": "10:53",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+          "title": "Cooking Masterclass",
+          "thumbnailUrl": "https://i.imgur.com/0rVeh4A.jpg",
+          "duration": "6:20",
+          "mp4": "https://archive.org/download/CookingWithParis/CookingWithParis.mp4"
         },
         {
-          "title": "Sintel Chef",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/Sintel.jpg",
-          "duration": "14:48",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+          "title": "Burger Making",
+          "thumbnailUrl": "https://i.imgur.com/8Km9tLL.jpg",
+          "duration": "4:00",
+          "mp4": "https://archive.org/download/BurgerVideo/burger.mp4"
         },
         {
-          "title": "Steel Cooking Show",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/TearsOfSteel.jpg",
-          "duration": "12:14",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
+          "title": "Dessert Show",
+          "thumbnailUrl": "https://i.imgur.com/5tj6S7O.jpg",
+          "duration": "3:40",
+          "mp4": "https://archive.org/download/DessertVideo/dessert.mp4"
         },
         {
-          "title": "Burger Blaze",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerBlazes.jpg",
-          "duration": "0:15",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+          "title": "Home Cooking",
+          "thumbnailUrl": "https://i.imgur.com/u8KQF6P.jpg",
+          "duration": "5:30",
+          "mp4": "https://archive.org/download/HomeCooking/home.mp4"
         },
         {
-          "title": "Fun Cooking",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerFun.jpg",
-          "duration": "0:15",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+          "title": "Chef Special",
+          "thumbnailUrl": "https://i.imgur.com/9bK0YhS.jpg",
+          "duration": "4:50",
+          "mp4": "https://archive.org/download/ChefVideo/chef.mp4"
         },
         {
-          "title": "Joyride Recipes",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerJoyrides.jpg",
-          "duration": "0:15",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+          "title": "Italian Kitchen",
+          "thumbnailUrl": "https://i.imgur.com/Vu8FJ8O.jpg",
+          "duration": "6:10",
+          "mp4": "https://archive.org/download/ItalianCooking/italian.mp4"
         },
         {
-          "title": "Meltdown Meals",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerMeltdowns.jpg",
-          "duration": "0:15",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
+          "title": "BBQ Grill",
+          "thumbnailUrl": "https://i.imgur.com/3ZQ3Z6K.jpg",
+          "duration": "4:35",
+          "mp4": "https://archive.org/download/BBQVideo/bbq.mp4"
         },
         {
-          "title": "Street Cooking Drive",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/SubaruOutbackOnStreetAndDirt.jpg",
-          "duration": "2:10",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
+          "title": "Vegan Recipes",
+          "thumbnailUrl": "https://i.imgur.com/2nCt3Sb.jpg",
+          "duration": "5:05",
+          "mp4": "https://archive.org/download/VeganCooking/vegan.mp4"
+        },
+        {
+          "title": "Food Documentary",
+          "thumbnailUrl": "https://i.imgur.com/e7nD7nC.jpg",
+          "duration": "7:00",
+          "mp4": "https://archive.org/download/FoodDoc/food.mp4"
         }
       ]
     },
@@ -184,58 +196,64 @@
       "category": { "name": "Nature" },
       "contents": [
         {
-          "title": "Nature Bunny",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg",
-          "duration": "9:56",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+          "title": "Wildlife Safari",
+          "thumbnailUrl": "https://i.imgur.com/9bK0YhS.jpg",
+          "duration": "7:12",
+          "mp4": "https://archive.org/download/WildlifeSampleVideo/wildlife.mp4"
         },
         {
-          "title": "Dream Forest",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ElephantsDream.jpg",
-          "duration": "10:53",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+          "title": "Rainforest",
+          "thumbnailUrl": "https://i.imgur.com/Vu8FJ8O.jpg",
+          "duration": "6:10",
+          "mp4": "https://archive.org/download/RainforestVideo/rainforest.mp4"
         },
         {
-          "title": "Sintel Hills",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/Sintel.jpg",
-          "duration": "14:48",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+          "title": "Ocean Life",
+          "thumbnailUrl": "https://i.imgur.com/3ZQ3Z6K.jpg",
+          "duration": "5:55",
+          "mp4": "https://archive.org/download/OceanVideo/ocean.mp4"
         },
         {
-          "title": "Steel Sky",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/TearsOfSteel.jpg",
-          "duration": "12:14",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
+          "title": "Bird Planet",
+          "thumbnailUrl": "https://i.imgur.com/2nCt3Sb.jpg",
+          "duration": "4:45",
+          "mp4": "https://archive.org/download/BirdsVideo/birds.mp4"
         },
         {
-          "title": "Blaze Sunset",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerBlazes.jpg",
-          "duration": "0:15",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+          "title": "Waterfalls",
+          "thumbnailUrl": "https://i.imgur.com/7QFQ0QK.jpg",
+          "duration": "3:50",
+          "mp4": "https://archive.org/download/WaterfallVideo/waterfall.mp4"
         },
         {
-          "title": "Fun Rain",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerFun.jpg",
-          "duration": "0:15",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+          "title": "Nature Relax",
+          "thumbnailUrl": "https://i.imgur.com/0rVeh4A.jpg",
+          "duration": "8:00",
+          "mp4": "https://archive.org/download/NatureRelax/nature.mp4"
         },
         {
-          "title": "Joyride River",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerJoyrides.jpg",
-          "duration": "0:15",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+          "title": "Green Planet",
+          "thumbnailUrl": "https://i.imgur.com/8Km9tLL.jpg",
+          "duration": "6:30",
+          "mp4": "https://archive.org/download/GreenPlanet/planet.mp4"
         },
         {
-          "title": "Meltdown Storm",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerMeltdowns.jpg",
-          "duration": "0:15",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
+          "title": "Jungle Life",
+          "thumbnailUrl": "https://i.imgur.com/5tj6S7O.jpg",
+          "duration": "5:40",
+          "mp4": "https://archive.org/download/JungleLife/jungle.mp4"
         },
         {
-          "title": "Nature Drive",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/SubaruOutbackOnStreetAndDirt.jpg",
-          "duration": "2:10",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
+          "title": "Snow Nature",
+          "thumbnailUrl": "https://i.imgur.com/u8KQF6P.jpg",
+          "duration": "4:25",
+          "mp4": "https://archive.org/download/SnowNature/snow.mp4"
+        },
+        {
+          "title": "Sunset Views",
+          "thumbnailUrl": "https://i.imgur.com/e7nD7nC.jpg",
+          "duration": "3:35",
+          "mp4": "https://archive.org/download/SunsetVideo/sunset.mp4"
         }
       ]
     },
@@ -244,58 +262,64 @@
       "category": { "name": "Technology" },
       "contents": [
         {
-          "title": "Tech Bunny",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg",
-          "duration": "9:56",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+          "title": "AI Future",
+          "thumbnailUrl": "https://i.imgur.com/3ZQ3Z6K.jpg",
+          "duration": "4:05",
+          "mp4": "https://archive.org/download/AIFuture/ai.mp4"
         },
         {
-          "title": "Future Dream",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ElephantsDream.jpg",
-          "duration": "10:53",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+          "title": "Robotics World",
+          "thumbnailUrl": "https://i.imgur.com/2nCt3Sb.jpg",
+          "duration": "5:10",
+          "mp4": "https://archive.org/download/RoboticsVideo/robot.mp4"
         },
         {
-          "title": "AI Sintel",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/Sintel.jpg",
-          "duration": "14:48",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+          "title": "Tech Documentary",
+          "thumbnailUrl": "https://i.imgur.com/7QFQ0QK.jpg",
+          "duration": "6:45",
+          "mp4": "https://archive.org/download/TechDoc/tech.mp4"
         },
         {
-          "title": "Steel Robots",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/TearsOfSteel.jpg",
-          "duration": "12:14",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
+          "title": "Space Tech",
+          "thumbnailUrl": "https://i.imgur.com/Vu8FJ8O.jpg",
+          "duration": "7:20",
+          "mp4": "https://archive.org/download/SpaceTechnology/space.mp4"
         },
         {
-          "title": "Blaze Gadgets",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerBlazes.jpg",
-          "duration": "0:15",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+          "title": "Future Gadgets",
+          "thumbnailUrl": "https://i.imgur.com/8Km9tLL.jpg",
+          "duration": "3:55",
+          "mp4": "https://archive.org/download/GadgetsVideo/gadgets.mp4"
         },
         {
-          "title": "Fun Devices",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerFun.jpg",
-          "duration": "0:15",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+          "title": "Cyber World",
+          "thumbnailUrl": "https://i.imgur.com/5tj6S7O.jpg",
+          "duration": "4:30",
+          "mp4": "https://archive.org/download/CyberWorld/cyber.mp4"
         },
         {
-          "title": "Joyride Drones",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerJoyrides.jpg",
-          "duration": "0:15",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+          "title": "Server Tech",
+          "thumbnailUrl": "https://i.imgur.com/0rVeh4A.jpg",
+          "duration": "5:00",
+          "mp4": "https://archive.org/download/ServerVideo/server.mp4"
         },
         {
-          "title": "Meltdown Servers",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerMeltdowns.jpg",
-          "duration": "0:15",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
+          "title": "Drone Tech",
+          "thumbnailUrl": "https://i.imgur.com/u8KQF6P.jpg",
+          "duration": "4:15",
+          "mp4": "https://archive.org/download/DroneVideo/drone.mp4"
         },
         {
-          "title": "Tech Drive",
-          "thumbnailUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/SubaruOutbackOnStreetAndDirt.jpg",
-          "duration": "2:10",
-          "mp4": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
+          "title": "Automation",
+          "thumbnailUrl": "https://i.imgur.com/9bK0YhS.jpg",
+          "duration": "6:05",
+          "mp4": "https://archive.org/download/AutomationVideo/automation.mp4"
+        },
+        {
+          "title": "Quantum Future",
+          "thumbnailUrl": "https://i.imgur.com/e7nD7nC.jpg",
+          "duration": "5:35",
+          "mp4": "https://archive.org/download/QuantumTech/quantum.mp4"
         }
       ]
     }
